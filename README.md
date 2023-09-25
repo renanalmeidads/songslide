@@ -45,19 +45,19 @@ A ação do jogador se caracteriza por apertar uma tecla no momento solicitado p
 
 Para cada ação solicitada existe um valor perfeito, caracterizado por uma imprecisão $(I) = 0$.
 
-Cada ação será monitorada e avaliada para verificar a imprecisão (em milisegundos) podendo ser obtidos os seguintes resultados:
-
-$I$ = 0 ms (ação perfeita)
-$I$ > 0 ms (ação atrasada)
+Cada ação será monitorada e avaliada para verificar a imprecisão (em milisegundos) podendo ser obtidos os seguintes resultados:\
+\
+$I$ = 0 ms (ação perfeita)\
+$I$ > 0 ms (ação atrasada)\
 $I$ < 0 ms (ação adiantada)
 
 Para uma ação perfeita não será descontada nenhuma pontuação.
 
-Para uma ação atrasada ou adiantada um valor será descontado da pontuação de uma ação perfeita  ($P$), levando-se em consideração o módulo (ou valor absoluto) da imprecisão ($|I|$), seguindo a seguinte equação:
-
-Pontuação da ação = p
-Dificuldade selecionada = d
-Fase atual = f
+Para uma ação atrasada ou adiantada um valor será descontado da pontuação de uma ação perfeita  ($P$), levando-se em consideração o módulo (ou valor absoluto) da imprecisão ($|I|$), seguindo a seguinte equação:\
+\
+Pontuação da ação = $p$\
+Dificuldade selecionada = $d$\
+Fase atual = $f$
 
 $p = ((P - (|I|)) * (d + f)) \over 10$
 
@@ -73,13 +73,17 @@ A depender da fase selecionada, a pontuação será multiplicada por um peso, se
 
 Por exemplo:
 
+```
 A fase 1 tem um peso de 1.
 A ação do jogador gerou 35 pontos.
 A pontuação adicionada será 35 X 1 = 35 pontos.
+```
 
+```
 A fase 2 tem um peso de 1,5.
 A ação do jogador gerou 35 pontos.
 A pontuação adicionada será 35 X 2 = 52,5. O que implica em 52 pontos.
+```
 
 ## Requisitos
 
