@@ -61,7 +61,7 @@ Fase atual = $f$
 
 $p = ((P - (|I|)) * (d + f)) \over 10$
 
-O resultado será somado à pontuação total atual.
+O resultado **arredondado para baixo** será somado à pontuação total atual.
 
 A pontuação de uma ação perfeita terá um valor padrão de 1000.
 
