@@ -96,7 +96,6 @@ A pontuação adicionada será 35 X 2 = 52,5. O que implica em 52 pontos.
 #### Personas
 **Jogador**: Será o usuário do jogo responsável por tomar as ações.
 
+## Protótipos de Tela
 
-
-
-
+![Diagrama](diagrama.png)
