@@ -61,7 +61,7 @@ export default class StarterLevel extends Phaser.Scene
         ball.setFriction(0.2, 0, 0);
 
 
-        this.note = this.add.image(1920, 900, 'left-button');
+        this.note = this.add.image(1920, 700, 'left-button');
         this.note.setScrollFactor(0);
 
        this.cameras.main.startFollow(ball, false, 0.5, 0.5);
